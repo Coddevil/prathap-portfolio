@@ -22,20 +22,28 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/animations.css">
 
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
+<!-- =========================
+     NAVBAR
+========================= -->
 
-        <!-- LOGO -->
-        <div class="logo">
-            Prathap
-        </div>
+<header class="navbar">
 
-        <!-- NAV LINKS -->
+    <!-- LOGO -->
+    <div class="logo">
+
+        Prathap
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+
         <ul class="nav-links">
 
             <li>
@@ -45,7 +53,8 @@
             </li>
 
             <li>
-                <a href="skills.html" class="active">
+                <a href="skills.html"
+                   class="active">
                     Skills
                 </a>
             </li>
@@ -57,7 +66,7 @@
             </li>
 
             <li>
-                <a href="internship.html">
+                <a href="internships.html">
                     Internships
                 </a>
             </li>
@@ -76,656 +85,665 @@
 
         </ul>
 
-    </header>
+    </nav>
 
-    <!-- HERO SECTION -->
-    <section class="skills-hero">
+</header>
 
-        <div class="skills-title">
+<!-- =========================
+     HERO SECTION
+========================= -->
 
-            <h1>
-                Skills & Technologies
-            </h1>
+<section class="skills-hero">
+
+    <div class="skills-title fade-up">
+
+        <h1>
+
+            Skills & Technologies
+
+        </h1>
+
+        <p>
+
+            Technologies, tools, platforms,
+            and development skills powering my journey
+            in Artificial Intelligence, Web Development,
+            and Software Engineering.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SKILLS SECTION
+========================= -->
+
+<section class="skills-section">
+
+    <!-- SEARCH BAR -->
+
+    <div class="skills-search fade-up">
+
+        <input type="text"
+               id="searchSkill"
+               placeholder="Search technologies...">
+
+    </div>
+
+    <!-- GRID -->
+
+    <div class="skills-grid">
+
+        <!-- =========================
+             WEB DEVELOPMENT
+        ========================= -->
+
+        <div class="skill-category fade-up">
+
+            <h2>
+
+                <i class="fas fa-code"></i>
+
+                Web Development
+
+            </h2>
+
+            <div class="skill-items">
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Markup language used to structure web pages.">
+
+                    <i class="fab fa-html5"></i>
+
+                    <span>HTML</span>
+
+                </a>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Style sheet language used for designing websites.">
+
+                    <i class="fab fa-css3-alt"></i>
+
+                    <span>CSS</span>
+
+                </a>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Programming language used to create interactive websites.">
+
+                    <i class="fab fa-js"></i>
+
+                    <span>JavaScript</span>
+
+                </a>
+
+                <a href="https://www.php.net/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Server-side scripting language used in web applications.">
+
+                    <i class="fab fa-php"></i>
+
+                    <span>PHP</span>
+
+                </a>
+
+                <a href="https://en.wikipedia.org/wiki/Web_development"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Building and maintaining responsive websites and web applications.">
+
+                    <i class="fas fa-globe"></i>
+
+                    <span>Web Development</span>
+
+                </a>
+
+                <a href="https://en.wikipedia.org/wiki/Front-end_web_development"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Designing modern user interfaces and frontend systems.">
+
+                    <i class="fas fa-laptop-code"></i>
+
+                    <span>Front-End Dev</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+             PROGRAMMING LANGUAGES
+        ========================= -->
+
+        <div class="skill-category fade-up">
+
+            <h2>
+
+                <i class="fas fa-laptop-code"></i>
+
+                Programming Languages
+
+            </h2>
+
+            <div class="skill-items">
+
+                <a href="https://en.wikipedia.org/wiki/C_(programming_language)"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Structured programming language used in system programming.">
+
+                    <i class="fas fa-c"></i>
+
+                    <span>C</span>
+
+                </a>
+
+                <a href="https://isocpp.org/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Object-oriented programming language for software development.">
+
+                    <i class="fas fa-code"></i>
+
+                    <span>C++</span>
+
+                </a>
+
+                <a href="https://www.python.org/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Programming language widely used in AI, automation, and data science.">
+
+                    <i class="fab fa-python"></i>
+
+                    <span>Python</span>
+
+                </a>
+
+                <a href="https://www.java.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Popular object-oriented language used for enterprise applications.">
+
+                    <i class="fab fa-java"></i>
+
+                    <span>Java</span>
+
+                </a>
+
+                <a href="https://kotlinlang.org/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Modern programming language used for Android development.">
+
+                    <i class="fas fa-mobile-alt"></i>
+
+                    <span>Kotlin</span>
+
+                </a>
+
+                <a href="https://learn.microsoft.com/en-us/dotnet/visual-basic/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Event-driven programming language from Microsoft.">
+
+                    <i class="fas fa-window-maximize"></i>
+
+                    <span>Visual Basic</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+             APP DEVELOPMENT
+        ========================= -->
+
+        <div class="skill-category fade-up">
+
+            <h2>
+
+                <i class="fas fa-mobile-screen"></i>
+
+                App Development
+
+            </h2>
+
+            <div class="skill-items">
+
+                <a href="https://developer.android.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Building mobile applications for Android devices.">
+
+                    <i class="fas fa-mobile-screen-button"></i>
+
+                    <span>Android Development</span>
+
+                </a>
+
+                <a href="https://en.wikipedia.org/wiki/Mobile_app_development"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Creating responsive and interactive mobile applications.">
+
+                    <i class="fas fa-mobile-alt"></i>
+
+                    <span>Mobile App Dev</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+             PRODUCTIVITY TOOLS
+        ========================= -->
+
+        <div class="skill-category fade-up">
+
+            <h2>
+
+                <i class="fas fa-briefcase"></i>
+
+                Productivity Tools
+
+            </h2>
+
+            <div class="skill-items">
+
+                <a href="https://www.microsoft.com/microsoft-365"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Office productivity suite used for professional tasks.">
+
+                    <i class="fas fa-briefcase"></i>
+
+                    <span>MS Office</span>
+
+                </a>
+
+                <a href="https://www.microsoft.com/microsoft-365/word"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Document processing and editing software.">
+
+                    <i class="fas fa-file-word"></i>
+
+                    <span>MS Word</span>
+
+                </a>
+
+                <a href="https://www.microsoft.com/microsoft-365/excel"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Spreadsheet and data analysis software.">
+
+                    <i class="fas fa-file-excel"></i>
+
+                    <span>MS Excel</span>
+
+                </a>
+
+                <a href="https://www.microsoft.com/microsoft-365/powerpoint"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Presentation creation software for slides and reports.">
+
+                    <i class="fas fa-file-powerpoint"></i>
+
+                    <span>MS PowerPoint</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+             TOOLS & PLATFORMS
+        ========================= -->
+
+        <div class="skill-category fade-up">
+
+            <h2>
+
+                <i class="fas fa-screwdriver-wrench"></i>
+
+                Tools & Platforms
+
+            </h2>
+
+            <div class="skill-items">
+
+                <a href="https://code.visualstudio.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Modern source code editor for development workflows.">
+
+                    <i class="fas fa-code"></i>
+
+                    <span>VS Code</span>
+
+                </a>
+
+                <a href="https://developer.android.com/studio"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Official IDE for Android application development.">
+
+                    <i class="fas fa-mobile-screen"></i>
+
+                    <span>Android Studio</span>
+
+                </a>
+
+                <a href="https://github.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Version control and collaborative code hosting platform.">
+
+                    <i class="fab fa-github"></i>
+
+                    <span>GitHub</span>
+
+                </a>
+
+                <a href="https://www.netlify.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="skill-card"
+                   data-tooltip="Frontend deployment and hosting platform.">
+
+                    <i class="fas fa-globe"></i>
+
+                    <span>Netlify</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+             SOFT SKILLS
+        ========================= -->
+
+        <div class="skill-category fade-up">
+
+            <h2>
+
+                <i class="fas fa-people-group"></i>
+
+                Soft Skills
+
+            </h2>
+
+            <div class="skill-items">
+
+                <a href="#"
+                   class="skill-card"
+                   data-tooltip="Effective verbal and written communication abilities.">
+
+                    <i class="fas fa-comments"></i>
+
+                    <span>Communication</span>
+
+                </a>
+
+                <a href="#"
+                   class="skill-card"
+                   data-tooltip="Analytical thinking and real-world problem solving.">
+
+                    <i class="fas fa-lightbulb"></i>
+
+                    <span>Problem Solving</span>
+
+                </a>
+
+                <a href="#"
+                   class="skill-card"
+                   data-tooltip="Collaborating efficiently with teams and projects.">
+
+                    <i class="fas fa-users"></i>
+
+                    <span>Teamwork</span>
+
+                </a>
+
+                <a href="#"
+                   class="skill-card"
+                   data-tooltip="Quickly adapting to technologies and new challenges.">
+
+                    <i class="fas fa-repeat"></i>
+
+                    <span>Adaptability</span>
+
+                </a>
+
+                <a href="#"
+                   class="skill-card"
+                   data-tooltip="Generating innovative ideas and creative solutions.">
+
+                    <i class="fas fa-palette"></i>
+
+                    <span>Creativity</span>
+
+                </a>
+
+                <a href="#"
+                   class="skill-card"
+                   data-tooltip="Managing tasks effectively and maintaining productivity.">
+
+                    <i class="fas fa-clock"></i>
+
+                    <span>Time Management</span>
+
+                </a>
+
+                <a href="#"
+                   class="skill-card"
+                   data-tooltip="Learning new tools and technologies efficiently.">
+
+                    <i class="fas fa-brain"></i>
+
+                    <span>Quick Learning</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <h2>
+
+                Prathap
+
+            </h2>
 
             <p>
-                Technologies, tools, and platforms
-                powering my development journey.
+
+                Building futuristic web experiences,
+                solving real-world problems,
+                and continuously evolving as a developer.
+
             </p>
 
         </div>
 
-    </section>
+        <!-- QUICK LINKS -->
 
-    <!-- SKILLS SECTION -->
-    <section class="skills-section">
+        <div class="footer-links">
 
-<!-- SEARCH BAR -->
+            <h3>
 
-<div class="skills-search">
+                Quick Links
 
-    <input type="text"
-           id="searchSkill"
+            </h3>
 
-           placeholder="Search technologies...">
+            <ul>
 
-</div>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
 
-        <div class="skills-grid">
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
 
-            <!-- WEB DEVELOPMENT -->
-<div class="skill-category fade-up">
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
 
-    <h2>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
 
-        <i class="fas fa-code"></i>
-
-        Web Development
-
-    </h2>
-
-    <div class="skill-items">
-
-        <!-- HTML -->
-        <a href="https://www.google.com/search?q=HTML"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Markup Language for Web Pages">
-
-            <i class="fab fa-html5"></i>
-
-            <span>HTML</span>
-
-        </a>
-
-        <!-- CSS -->
-        <a href="https://www.google.com/search?q=CSS"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Style Sheet Language for Websites">
-
-            <i class="fab fa-css3-alt"></i>
-
-            <span>CSS</span>
-
-        </a>
-
-        <!-- JAVASCRIPT -->
-        <a href="https://www.google.com/search?q=JavaScript"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Programming Language for Interactive Websites">
-
-            <i class="fab fa-js"></i>
-
-            <span>JavaScript</span>
-
-        </a>
-
-        <!-- PHP -->
-        <a href="https://www.google.com/search?q=PHP"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Server-side Scripting Language">
-
-            <i class="fab fa-php"></i>
-
-            <span>PHP</span>
-
-        </a>
-
-        <!-- WEB DEVELOPMENT -->
-        <a href="https://www.google.com/search?q=Web+Development"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Building and Maintaining Websites">
-
-            <i class="fas fa-globe"></i>
-
-            <span>Web Development</span>
-
-        </a>
-
-        <!-- FRONTEND -->
-        <a href="https://www.google.com/search?q=Frontend+Development"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Designing Interactive User Interfaces">
-
-            <i class="fas fa-laptop-code"></i>
-
-            <span>Front-End Dev</span>
-
-        </a>
-
-    </div>
-
-</div>
-
-<!-- PROGRAMMING LANGUAGES -->
-<div class="skill-category fade-up">
-
-    <h2>
-
-        <i class="fas fa-laptop-code"></i>
-
-        Programming Languages
-
-    </h2>
-
-    <div class="skill-items">
-
-        <!-- C -->
-        <a href="https://www.google.com/search?q=C+Programming"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Structured Programming Language">
-
-            <i class="fas fa-c"></i>
-
-            <span>C</span>
-
-        </a>
-
-        <!-- C++ -->
-        <a href="https://www.google.com/search?q=C%2B%2B+Programming"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Object-Oriented Programming Language">
-
-            <i class="fas fa-code"></i>
-
-            <span>C++</span>
-
-        </a>
-
-        <!-- PYTHON -->
-        <a href="https://www.google.com/search?q=Python"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="AI, Automation & Data Science Language">
-
-            <i class="fab fa-python"></i>
-
-            <span>Python</span>
-
-        </a>
-
-        <!-- JAVA -->
-        <a href="https://www.google.com/search?q=Java"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Popular Object-Oriented Programming Language">
-
-            <i class="fab fa-java"></i>
-
-            <span>Java</span>
-
-        </a>
-
-        <!-- KOTLIN -->
-        <a href="https://www.google.com/search?q=Kotlin"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Modern Language for Android Development">
-
-            <i class="fas fa-mobile-alt"></i>
-
-            <span>Kotlin</span>
-
-        </a>
-
-        <!-- VISUAL BASIC -->
-        <a href="https://www.google.com/search?q=Visual+Basic"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Event-Driven Programming Language">
-
-            <i class="fas fa-window-maximize"></i>
-
-            <span>Visual Basic</span>
-
-        </a>
-
-    </div>
-
-</div>
-
-<!-- APP DEVELOPMENT -->
-<div class="skill-category fade-up">
-
-    <h2>
-
-        <i class="fas fa-mobile-screen"></i>
-
-        App Development
-
-    </h2>
-
-    <div class="skill-items">
-
-        <!-- ANDROID DEVELOPMENT -->
-        <a href="https://www.google.com/search?q=Android+Development"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Building Mobile Applications for Android">
-
-            <i class="fas fa-mobile-screen-button"></i>
-
-            <span>Android Development</span>
-
-        </a>
-
-        <!-- MOBILE APP -->
-        <a href="https://www.google.com/search?q=Mobile+Application+Development"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Creating Mobile Applications">
-
-            <i class="fas fa-mobile-alt"></i>
-
-            <span>Mobile App Dev</span>
-
-        </a>
-
-    </div>
-
-</div>
-
-<!-- PRODUCTIVITY TOOLS -->
-<div class="skill-category fade-up">
-
-    <h2>
-
-        <i class="fas fa-briefcase"></i>
-
-        Productivity Tools
-
-    </h2>
-
-    <div class="skill-items">
-
-        <!-- MS OFFICE -->
-        <a href="https://www.google.com/search?q=Microsoft+Office"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Office Productivity Software Suite">
-
-            <i class="fas fa-briefcase"></i>
-
-            <span>MS Office</span>
-
-        </a>
-
-        <!-- WORD -->
-        <a href="https://www.google.com/search?q=Microsoft+Word"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Document Processing Software">
-
-            <i class="fas fa-file-word"></i>
-
-            <span>MS Word</span>
-
-        </a>
-
-        <!-- EXCEL -->
-        <a href="https://www.google.com/search?q=Microsoft+Excel"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Spreadsheet & Data Management Software">
-
-            <i class="fas fa-file-excel"></i>
-
-            <span>MS Excel</span>
-
-        </a>
-
-        <!-- POWERPOINT -->
-        <a href="https://www.google.com/search?q=Microsoft+PowerPoint"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Presentation Creation Software">
-
-            <i class="fas fa-file-powerpoint"></i>
-
-            <span>MS PowerPoint</span>
-
-        </a>
-
-    </div>
-
-</div>
-
-<!-- TOOLS & PLATFORMS -->
-<div class="skill-category fade-up">
-
-    <h2>
-
-        <i class="fas fa-screwdriver-wrench"></i>
-
-        Tools & Platforms
-
-    </h2>
-
-    <div class="skill-items">
-
-        <!-- VS CODE -->
-        <a href="https://code.visualstudio.com/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Source Code Editor">
-
-            <i class="fas fa-code"></i>
-
-            <span>VS Code</span>
-
-        </a>
-
-        <!-- ANDROID STUDIO -->
-        <a href="https://developer.android.com/studio"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="IDE for Android Development">
-
-            <i class="fas fa-mobile-screen"></i>
-
-            <span>Android Studio</span>
-
-        </a>
-
-        <!-- GITHUB -->
-        <a href="https://github.com/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Version Control & Code Hosting">
-
-            <i class="fab fa-github"></i>
-
-            <span>GitHub</span>
-
-        </a>
-
-        <!-- NETLIFY -->
-        <a href="https://www.netlify.com/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Frontend Hosting & Deployment Platform">
-
-            <i class="fas fa-globe"></i>
-
-            <span>Netlify</span>
-
-        </a>
-
-    </div>
-
-</div>
-
-<!-- SOFT SKILLS -->
-<div class="skill-category fade-up">
-
-    <h2>
-
-        <i class="fas fa-people-group"></i>
-
-        Soft Skills
-
-    </h2>
-
-    <div class="skill-items">
-
-        <!-- COMMUNICATION -->
-        <a href="https://www.google.com/search?q=Communication+Skills"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Effective Verbal & Written Communication">
-
-            <i class="fas fa-comments"></i>
-
-            <span>Communication</span>
-
-        </a>
-
-        <!-- PROBLEM SOLVING -->
-        <a href="https://www.google.com/search?q=Problem+Solving"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Analytical Thinking & Solution Building">
-
-            <i class="fas fa-lightbulb"></i>
-
-            <span>Problem Solving</span>
-
-        </a>
-
-        <!-- TEAMWORK -->
-        <a href="https://www.google.com/search?q=Teamwork+Skills"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Collaborating Effectively with Teams">
-
-            <i class="fas fa-users"></i>
-
-            <span>Teamwork</span>
-
-        </a>
-
-        <!-- ADAPTABILITY -->
-        <a href="https://www.google.com/search?q=Adaptability+Skills"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Adjusting Quickly to New Challenges">
-
-            <i class="fas fa-repeat"></i>
-
-            <span>Adaptability</span>
-
-        </a>
-
-        <!-- CREATIVITY -->
-        <a href="https://www.google.com/search?q=Creativity+Skills"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Generating Innovative Ideas & Solutions">
-
-            <i class="fas fa-palette"></i>
-
-            <span>Creativity</span>
-
-        </a>
-
-        <!-- TIME MANAGEMENT -->
-        <a href="https://www.google.com/search?q=Time+Management"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Managing Tasks Efficiently & Productively">
-
-            <i class="fas fa-clock"></i>
-
-            <span>Time Management</span>
-
-        </a>
-
-        <!-- QUICK LEARNING -->
-        <a href="https://www.google.com/search?q=Quick+Learning+Skills"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="skill-card"
-           data-tooltip="Learning New Technologies Quickly">
-
-            <i class="fas fa-brain"></i>
-
-            <span>Quick Learning</span>
-
-        </a>
-
-    </div>
-
-</div>
+            </ul>
 
         </div>
 
-    </section>
+        <!-- SOCIAL -->
 
-    <!-- FOOTER -->
-    <footer class="footer">
+        <div class="footer-social">
 
-        <div class="footer-container">
+            <h3>
 
-            <!-- BRAND -->
-            <div class="footer-brand">
+                Connect
 
-                <h2>Prathap</h2>
+            </h3>
 
-                <p>
-                    Building futuristic web experiences,
-                    solving real-world problems,
-                    and continuously evolving as a developer.
-                </p>
+            <div class="footer-social-icons">
 
-            </div>
+                <a href="https://www.linkedin.com/in/prathap-b-a78b16326/"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
-            <!-- QUICK LINKS -->
-            <div class="footer-links">
+                    <i class="fab fa-linkedin"></i>
 
-                <h3>Quick Links</h3>
+                </a>
 
-                <ul>
+                <a href="https://github.com/coddevil"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
+                    <i class="fab fa-github"></i>
 
-                    <li>
-                        <a href="skills.html">
-                            Skills
-                        </a>
-                    </li>
+                </a>
 
-                    <li>
-                        <a href="projects.html">
-                            Projects
-                        </a>
-                    </li>
+                <a href="https://www.instagram.com/_the_morning_star_06/"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
+                    <i class="fab fa-instagram"></i>
 
-                </ul>
+                </a>
 
-            </div>
+                <a href="https://wa.me/919840453305"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
-            <!-- SOCIAL LINKS -->
-            <div class="footer-social">
+                    <i class="fab fa-whatsapp"></i>
 
-                <h3>Connect</h3>
+                </a>
 
-                <div class="footer-social-icons">
+                <a href="mailto:prathapbaskar12@gmail.com">
 
-                    <!-- LINKEDIN -->
-                    <a href="https://www.linkedin.com/in/prathap-b-a78b16326/"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                    <i class="fas fa-envelope"></i>
 
-                        <i class="fab fa-linkedin"></i>
-
-                    </a>
-
-                    <!-- GITHUB -->
-                    <a href="https://github.com/coddevil"
-                       target="_blank"
-                       rel="noopener noreferrer">
-
-                        <i class="fab fa-github"></i>
-
-                    </a>
-
-                    <!-- INSTAGRAM -->
-                    <a href="https://www.instagram.com/_the_morning_star_06/"
-                       target="_blank"
-                       rel="noopener noreferrer">
-
-                        <i class="fab fa-instagram"></i>
-
-                    </a>
-
-                    <!-- WHATSAPP -->
-                    <a href="https://wa.me/919840453305"
-                       target="_blank"
-                       rel="noopener noreferrer">
-
-                        <i class="fab fa-whatsapp"></i>
-
-                    </a>
-
-                    <!-- EMAIL -->
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=prathapbaskar12@gmail.com"
-   target="_blank">
-
-    <i class="fas fa-envelope"></i>
-
-</a>
-
-                </div>
+                </a>
 
             </div>
 
         </div>
 
-        <!-- COPYRIGHT -->
-        <div class="footer-bottom">
+    </div>
 
-            <p>
-                © 2026 Prathap B. All Rights Reserved.
-            </p>
+    <!-- COPYRIGHT -->
 
-        </div>
+    <div class="footer-bottom">
 
-        <!-- SCROLL TO TOP BUTTON -->
-        <button id="scrollTopBtn">
+        <p>
 
-            <i class="fas fa-arrow-up"></i>
+            © 2026 Prathap B. All Rights Reserved.
 
-        </button>
+        </p>
 
-    </footer>
+    </div>
 
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/main.js"></script>
-    <script src="js/skills.js"></script>
+    <!-- SCROLL BUTTON -->
+
+    <button id="scrollTopBtn">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+<script src="js/skills.js"></script>
 
 </body>
 
