@@ -1,0 +1,262 @@
+/* =========================
+   FADE UP ANIMATION
+========================= */
+
+.fade-up{
+
+    opacity: 0;
+
+    transform:
+    translateY(40px);
+
+    animation:
+    fadeUp 1s ease forwards;
+}
+
+/* =========================
+   KEYFRAMES
+========================= */
+
+@keyframes fadeUp{
+
+    to{
+
+        opacity: 1;
+
+        transform:
+        translateY(0);
+    }
+}
+
+/* =========================
+   PAGE FADE
+========================= */
+
+body{
+
+    animation:
+    pageFade 0.6s ease;
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity: 0;
+    }
+
+    to{
+
+        opacity: 1;
+    }
+}
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+.hidden{
+
+    opacity: 0;
+
+    transform:
+    translateY(40px);
+
+    transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.show{
+
+    opacity: 1;
+
+    transform:
+    translateY(0);
+}
+
+/* =========================
+   ZOOM IN EFFECT
+========================= */
+
+.zoom-in{
+
+    opacity: 0;
+
+    transform:
+    scale(0.9);
+
+    animation:
+    zoomIn 1s ease forwards;
+}
+
+@keyframes zoomIn{
+
+    to{
+
+        opacity: 1;
+
+        transform:
+        scale(1);
+    }
+}
+
+/* =========================
+   FLOAT ANIMATION
+========================= */
+
+.float{
+
+    animation:
+    floating 4s ease-in-out infinite;
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:
+        translateY(0);
+    }
+
+    50%{
+
+        transform:
+        translateY(-12px);
+    }
+
+    100%{
+
+        transform:
+        translateY(0);
+    }
+}
+
+/* =========================
+   GLOW PULSE
+========================= */
+
+.glow-pulse{
+
+    animation:
+    glowPulse 2.5s infinite;
+}
+
+@keyframes glowPulse{
+
+    0%{
+
+        box-shadow:
+        0 0 0 rgba(103,232,249,0);
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 30px rgba(103,232,249,0.35);
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 0 rgba(103,232,249,0);
+    }
+}
+
+/* =========================
+   HOVER LIFT
+========================= */
+
+.hover-lift{
+
+    transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.hover-lift:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 0 30px rgba(103,232,249,0.18);
+}
+
+/* =========================
+   BUTTON GLOW HOVER
+========================= */
+
+.glow-hover{
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.glow-hover::before{
+
+    content: '';
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.12),
+        transparent
+    );
+
+    transform:
+    translateX(-100%);
+
+    transition: 0.8s ease;
+}
+
+.glow-hover:hover::before{
+
+    transform:
+    translateX(100%);
+}
+
+/* =========================
+   STAGGER DELAYS
+========================= */
+
+.delay-1{
+
+    animation-delay: 0.2s;
+}
+
+.delay-2{
+
+    animation-delay: 0.4s;
+}
+
+.delay-3{
+
+    animation-delay: 0.6s;
+}
+
+.delay-4{
+
+    animation-delay: 0.8s;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .fade-up,
+    .zoom-in,
+    .hidden{
+
+        transform:
+        translateY(20px);
+    }
+}

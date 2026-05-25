@@ -1,0 +1,496 @@
+/* =========================
+   PROJECT HERO
+========================= */
+
+.projects-hero{
+
+    padding:
+    160px 10% 100px;
+
+    text-align: center;
+}
+
+.projects-hero h1{
+
+    font-size: 72px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    background:
+    linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.projects-hero p{
+
+    color: var(--text-secondary);
+
+    font-size: 20px;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.projects-section{
+
+    padding:
+    0 10% 120px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* =========================
+   FLOATING GLOW
+========================= */
+
+.projects-section::before{
+
+    content: '';
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    background:
+    rgba(103,232,249,0.08);
+
+    filter: blur(120px);
+
+    top: 10%;
+    left: -100px;
+
+    z-index: -1;
+}
+
+.projects-section::after{
+
+    content: '';
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background:
+    rgba(139,92,246,0.08);
+
+    filter: blur(120px);
+
+    bottom: 0;
+    right: -100px;
+
+    z-index: -1;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.projects-search{
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 60px;
+}
+
+.projects-search input{
+
+    width: 420px;
+
+    padding: 18px 24px;
+
+    border-radius: 16px;
+
+    border:
+    1px solid var(--border-color);
+
+    background:
+    rgba(255,255,255,0.04);
+
+    color: var(--text-color);
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.4s ease;
+
+    backdrop-filter: blur(10px);
+}
+
+/* INPUT FOCUS */
+
+.projects-search input:focus{
+
+    border-color:
+    var(--primary-color);
+
+    box-shadow:
+    0 0 25px var(--glow-color);
+}
+
+/* PLACEHOLDER */
+
+.projects-search input::placeholder{
+
+    color: #94a3b8;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.projects-grid{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 40px;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card{
+
+    background:
+    var(--card-bg);
+
+    border:
+    1px solid var(--border-color);
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    transition: 0.45s ease;
+
+    position: relative;
+
+    backdrop-filter: blur(14px);
+
+    opacity: 1;
+
+    transform:
+    translateY(0);
+}
+
+/* CARD GLOW */
+
+.project-card::before{
+
+    content: '';
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    background:
+    rgba(103,232,249,0.08);
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    top: -80px;
+    right: -80px;
+
+    z-index: -1;
+}
+
+/* HOVER EFFECT */
+
+.project-card:hover{
+
+    transform:
+    translateY(-12px);
+
+    border-color:
+    var(--primary-color);
+
+    box-shadow:
+    0 0 35px var(--glow-color);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.project-image{
+
+    overflow: hidden;
+
+    height: 240px;
+
+    position: relative;
+}
+
+.project-image img{
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+/* IMAGE OVERLAY */
+
+.project-image::after{
+
+    content: '';
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(15,23,42,0.4),
+        transparent
+    );
+}
+
+/* IMAGE ZOOM */
+
+.project-card:hover img{
+
+    transform:
+    scale(1.08);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.project-content{
+
+    padding: 30px;
+}
+
+.project-content h2{
+
+    font-size: 30px;
+
+    margin-bottom: 18px;
+
+    color: var(--text-color);
+}
+
+.project-content p{
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.project-tags{
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.project-tags span{
+
+    padding:
+    10px 16px;
+
+    background:
+    rgba(103,232,249,0.08);
+
+    border:
+    1px solid rgba(103,232,249,0.15);
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    color: var(--primary-color);
+
+    transition: 0.35s ease;
+}
+
+/* TAG HOVER */
+
+.project-tags span:hover{
+
+    transform:
+    translateY(-4px);
+
+    background:
+    rgba(103,232,249,0.15);
+
+    box-shadow:
+    0 0 15px var(--glow-color);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.project-buttons{
+
+    display: flex;
+
+    gap: 20px;
+}
+
+.project-buttons a{
+
+    flex: 1;
+
+    text-align: center;
+
+    padding: 14px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: 600;
+
+    transition: 0.35s ease;
+
+    border:
+    1px solid var(--border-color);
+
+    background:
+    rgba(255,255,255,0.04);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+/* ICON */
+
+.project-buttons a i{
+
+    transition: 0.35s ease;
+}
+
+/* BUTTON HOVER */
+
+.project-buttons a:hover{
+
+    background:
+    linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    transform:
+    translateY(-4px);
+
+    box-shadow:
+    0 0 20px var(--glow-color);
+}
+
+.project-buttons a:hover i{
+
+    transform:
+    translateX(4px);
+}
+
+/* LIVE BUTTON */
+
+.live-btn{
+
+    background:
+    linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .projects-grid{
+
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .projects-hero h1{
+
+        font-size: 52px;
+    }
+
+    .projects-hero p{
+
+        font-size: 18px;
+    }
+
+    .projects-search input{
+
+        width: 100%;
+    }
+
+    .project-content h2{
+
+        font-size: 26px;
+    }
+
+    .project-buttons{
+
+        flex-direction: column;
+    }
+
+    .project-content{
+
+        padding: 24px;
+    }
+}

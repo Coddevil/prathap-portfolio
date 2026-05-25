@@ -1,0 +1,697 @@
+/* =========================
+   ACHIEVEMENTS SECTION
+========================= */
+
+.achievements-section{
+
+    padding:
+    140px 10% 120px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.section-title h2{
+
+    font-size: 68px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    background:
+    linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title p{
+
+    color: var(--text-secondary);
+
+    font-size: 20px;
+
+    max-width: 760px;
+
+    margin: auto;
+
+    line-height: 1.9;
+}
+
+/* =========================
+   ACHIEVEMENTS GRID
+========================= */
+
+.achievements-grid{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap: 40px;
+
+    margin-bottom: 140px;
+}
+
+/* =========================
+   ACHIEVEMENT CARD
+========================= */
+
+.achievement-card{
+
+    position: relative;
+
+    background:
+    var(--card-bg);
+
+    border:
+    1px solid var(--border-color);
+
+    border-radius: 30px;
+
+    padding: 40px 35px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(14px);
+
+    transition: 0.45s ease;
+}
+
+/* HOVER */
+
+.achievement-card:hover{
+
+    transform:
+    translateY(-12px);
+
+    border-color:
+    var(--primary-color);
+
+    box-shadow:
+    0 0 35px var(--glow-color);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.achievement-icon{
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 34px;
+
+    margin-bottom: 28px;
+
+    color: var(--primary-color);
+
+    background:
+    rgba(103,232,249,0.08);
+
+    border:
+    1px solid rgba(103,232,249,0.18);
+
+    transition: 0.45s ease;
+}
+
+/* ICON HOVER */
+
+.achievement-card:hover .achievement-icon{
+
+    background:
+    linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color: white;
+
+    transform:
+    rotate(-8deg) scale(1.08);
+
+    box-shadow:
+    0 0 25px var(--glow-color);
+}
+
+/* =========================
+   NUMBER
+========================= */
+
+.achievement-number{
+
+    font-size: 52px;
+
+    font-weight: 700;
+
+    color: var(--text-color);
+
+    margin-bottom: 12px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.achievement-card h3{
+
+    font-size: 32px;
+
+    margin-bottom: 18px;
+
+    color: var(--text-color);
+
+    line-height: 1.4;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.achievement-card p{
+
+    color: var(--text-secondary);
+
+    line-height: 1.9;
+
+    font-size: 16px;
+}
+
+/* =========================
+   CARD GLOW
+========================= */
+
+.achievement-card::before{
+
+    content: '';
+
+    position: absolute;
+
+    width: 240px;
+
+    height: 240px;
+
+    background:
+    rgba(103,232,249,0.08);
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    top: -100px;
+
+    right: -100px;
+
+    z-index: -1;
+}
+
+/* =========================
+   TIMELINE SECTION
+========================= */
+
+.timeline-section{
+
+    padding-top: 60px;
+
+    position: relative;
+}
+
+/* =========================
+   TIMELINE TITLE
+========================= */
+
+.timeline-section .section-title{
+
+    margin-bottom: 110px;
+}
+
+/* =========================
+   TIMELINE GLOW LINE
+========================= */
+
+.timeline-title-line{
+
+    width: 140px;
+
+    height: 5px;
+
+    margin: 35px auto 0;
+
+    border-radius: 50px;
+
+    background:
+    linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    box-shadow:
+    0 0 20px var(--glow-color);
+}
+
+/* =========================
+   TIMELINE CONTAINER
+========================= */
+
+.timeline-container{
+
+    position: relative;
+
+    max-width: 1400px;
+
+    margin: auto;
+}
+
+/* =========================
+   CENTER LINE
+========================= */
+
+.timeline-center-line{
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    transform: translateX(-50%);
+
+    width: 4px;
+
+    height: 100%;
+
+    border-radius: 50px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    box-shadow:
+    0 0 25px var(--glow-color);
+}
+
+/* =========================
+   TIMELINE ITEM
+========================= */
+
+.timeline-item{
+
+    position: relative;
+
+    width: 50%;
+
+    padding: 0 60px;
+
+    margin-bottom: 90px;
+
+    display: flex;
+}
+
+/* LEFT */
+
+.timeline-item.left{
+
+    left: 0;
+
+    justify-content: flex-end;
+
+    text-align: right;
+}
+
+/* RIGHT */
+
+.timeline-item.right{
+
+    left: 50%;
+
+    justify-content: flex-start;
+
+    text-align: left;
+}
+
+/* =========================
+   TIMELINE ICON
+========================= */
+
+.timeline-icon{
+
+    position: absolute;
+
+    top: 40px;
+
+    width: 74px;
+
+    height: 74px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 28px;
+
+    z-index: 10;
+
+    color: var(--primary-color);
+
+    background:
+    rgba(255,255,255,0.04);
+
+    border:
+    2px solid rgba(103,232,249,0.45);
+
+    backdrop-filter: blur(14px);
+
+    transition: 0.45s ease;
+
+    box-shadow:
+    0 0 25px var(--glow-color);
+}
+
+/* LEFT ICON */
+
+.timeline-item.left .timeline-icon{
+
+    right: -37px;
+}
+
+/* RIGHT ICON */
+
+.timeline-item.right .timeline-icon{
+
+    left: -37px;
+}
+
+/* HOVER */
+
+.timeline-item:hover .timeline-icon{
+
+    transform: scale(1.12);
+
+    background:
+    linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color: white;
+
+    box-shadow:
+    0 0 35px var(--glow-color);
+}
+
+/* =========================
+   TIMELINE CARD
+========================= */
+
+.timeline-card{
+
+    width: 100%;
+
+    max-width: 520px;
+
+    background:
+    var(--card-bg);
+
+    border:
+    1px solid var(--border-color);
+
+    border-radius: 28px;
+
+    padding: 35px;
+
+    backdrop-filter: blur(14px);
+
+    transition: 0.45s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* HOVER */
+
+.timeline-card:hover{
+
+    transform:
+    translateY(-10px);
+
+    border-color:
+    var(--primary-color);
+
+    box-shadow:
+    0 0 35px var(--glow-color);
+}
+
+/* DATE */
+
+.timeline-date{
+
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: var(--primary-color);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+/* TITLE */
+
+.timeline-card h3{
+
+    font-size: 32px;
+
+    margin-bottom: 18px;
+
+    color: var(--text-color);
+}
+
+/* TEXT */
+
+.timeline-card p{
+
+    color: var(--text-secondary);
+
+    line-height: 1.9;
+
+    font-size: 16px;
+}
+
+/* =========================
+   TIMELINE CARD GLOW
+========================= */
+
+.timeline-card::before{
+
+    content: '';
+
+    position: absolute;
+
+    width: 200px;
+
+    height: 200px;
+
+    background:
+    rgba(103,232,249,0.08);
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    top: -90px;
+
+    right: -90px;
+
+    z-index: -1;
+}
+
+/* =========================
+   BACKGROUND GLOWS
+========================= */
+
+.achievements-section::before{
+
+    content: '';
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    background:
+    rgba(103,232,249,0.06);
+
+    filter: blur(140px);
+
+    top: 0;
+
+    left: -200px;
+
+    z-index: -1;
+}
+
+.achievements-section::after{
+
+    content: '';
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    background:
+    rgba(139,92,246,0.06);
+
+    filter: blur(140px);
+
+    bottom: 0;
+
+    right: -180px;
+
+    z-index: -1;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .timeline-center-line{
+
+        left: 35px;
+    }
+
+    .timeline-item{
+
+        width: 100%;
+
+        padding-left: 110px;
+
+        padding-right: 10px;
+
+        text-align: left !important;
+    }
+
+    .timeline-item.right{
+
+        left: 0;
+    }
+
+    .timeline-item.left{
+
+        justify-content: flex-start;
+    }
+
+    .timeline-item.left .timeline-icon,
+    .timeline-item.right .timeline-icon{
+
+        left: 0;
+    }
+
+    .timeline-card{
+
+        max-width: 100%;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .section-title h2{
+
+        font-size: 46px;
+    }
+
+    .section-title p{
+
+        font-size: 17px;
+    }
+
+    .achievement-card{
+
+        padding: 32px 28px;
+    }
+
+    .achievement-card h3{
+
+        font-size: 26px;
+    }
+
+    .achievement-number{
+
+        font-size: 42px;
+    }
+
+    .timeline-card{
+
+        padding: 28px;
+    }
+
+    .timeline-card h3{
+
+        font-size: 26px;
+    }
+
+    .timeline-card p{
+
+        font-size: 15px;
+    }
+
+    .timeline-icon{
+
+        width: 62px;
+
+        height: 62px;
+
+        font-size: 22px;
+    }
+}
