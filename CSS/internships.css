@@ -1,0 +1,643 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.internship-hero{
+
+    padding: 160px 10% 100px;
+
+    text-align: center;
+}
+
+.internship-hero h1{
+
+    font-size: 72px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    background: linear-gradient(
+        to right,
+        #22d3ee,
+        #8b5cf6
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.internship-hero p{
+
+    color: #b8c1ec;
+
+    font-size: 20px;
+
+    max-width: 750px;
+
+    margin: auto;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   INTERNSHIP SECTION
+========================= */
+
+.internship-section{
+
+    padding: 0 10% 120px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* =========================
+   GLOW EFFECTS
+========================= */
+
+.internship-section::before{
+
+    content: '';
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    background: rgba(34,211,238,0.08);
+
+    filter: blur(120px);
+
+    top: 0;
+    left: -120px;
+
+    z-index: -1;
+}
+
+.internship-section::after{
+
+    content: '';
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background: rgba(139,92,246,0.08);
+
+    filter: blur(120px);
+
+    bottom: 0;
+    right: -120px;
+
+    z-index: -1;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.internship-container{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.internship-card{
+
+    display: flex;
+
+    gap: 40px;
+
+    align-items: center;
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    overflow: hidden;
+
+    transition: 0.45s ease;
+
+    backdrop-filter: blur(14px);
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* HOVER */
+
+.internship-card:hover{
+
+    transform: translateY(-10px);
+
+    border-color: rgba(34,211,238,0.35);
+
+    box-shadow: 0 0 35px rgba(34,211,238,0.15);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.internship-image{
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.internship-image img{
+
+    width: 100%;
+
+    max-width: 340px;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    transition: 0.45s ease;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* IMAGE HOVER */
+
+.internship-card:hover img{
+
+    transform: scale(1.04);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.internship-content{
+
+    flex: 2;
+}
+
+.internship-duration{
+
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    background: rgba(34,211,238,0.08);
+
+    border: 1px solid rgba(34,211,238,0.18);
+
+    color: #22d3ee;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.internship-content h2{
+
+    font-size: 34px;
+
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+.internship-content h3{
+
+    font-size: 22px;
+
+    margin-bottom: 22px;
+
+    color: #8b5cf6;
+}
+
+.internship-content p{
+
+    color: #b8c1ec;
+
+    line-height: 1.9;
+
+    margin-bottom: 28px;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.internship-tags{
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-bottom: 30px;
+}
+
+.internship-tags span{
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    background: rgba(34,211,238,0.08);
+
+    border: 1px solid rgba(34,211,238,0.18);
+
+    color: #22d3ee;
+
+    font-size: 14px;
+
+    transition: 0.35s ease;
+}
+
+/* TAG HOVER */
+
+.internship-tags span:hover{
+
+    transform: translateY(-4px);
+
+    background: rgba(34,211,238,0.15);
+
+    box-shadow: 0 0 18px rgba(34,211,238,0.18);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.internship-buttons{
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.internship-buttons a{
+
+    text-decoration: none;
+
+    padding: 14px 24px;
+
+    border-radius: 14px;
+
+    color: white;
+
+    font-weight: 600;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    background: rgba(255,255,255,0.04);
+
+    transition: 0.4s ease;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+/* BUTTON HOVER */
+
+.internship-buttons a:hover{
+
+    transform: translateY(-5px);
+
+    background: linear-gradient(
+        to right,
+        #22d3ee,
+        #8b5cf6
+    );
+
+    box-shadow: 0 0 25px rgba(34,211,238,0.18);
+}
+
+/* COMPANY BUTTON */
+
+.company-btn{
+
+    background: linear-gradient(
+        to right,
+        #22d3ee,
+        #8b5cf6
+    );
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    margin-top: 120px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    background: rgba(255,255,255,0.02);
+
+    padding: 70px 10% 20px;
+}
+
+/* CONTAINER */
+
+.footer-container{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    gap: 60px;
+}
+
+/* BRAND */
+
+.footer-brand{
+
+    flex: 1;
+
+    min-width: 250px;
+}
+
+.footer-brand h2{
+
+    font-size: 34px;
+
+    margin-bottom: 20px;
+
+    color: #22d3ee;
+}
+
+.footer-brand p{
+
+    color: #b8c1ec;
+
+    line-height: 1.8;
+
+    max-width: 380px;
+}
+
+/* LINKS */
+
+.footer-links{
+
+    min-width: 180px;
+}
+
+.footer-links h3{
+
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+    color: white;
+}
+
+.footer-links ul{
+
+    list-style: none;
+}
+
+.footer-links ul li{
+
+    margin-bottom: 14px;
+}
+
+.footer-links ul li a{
+
+    text-decoration: none;
+
+    color: #b8c1ec;
+
+    transition: 0.3s ease;
+}
+
+.footer-links ul li a:hover{
+
+    color: #22d3ee;
+
+    padding-left: 5px;
+}
+
+/* SOCIAL */
+
+.footer-social{
+
+    min-width: 220px;
+}
+
+.footer-social h3{
+
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+    color: white;
+}
+
+/* ICONS */
+
+.footer-social-icons{
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.footer-social-icons a{
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.4s ease;
+}
+
+/* ICON HOVER */
+
+.footer-social-icons a:hover{
+
+    transform: translateY(-6px);
+
+    background: linear-gradient(
+        to right,
+        #22d3ee,
+        #8b5cf6
+    );
+
+    box-shadow: 0 0 25px rgba(34,211,238,0.25);
+}
+
+/* BOTTOM */
+
+.footer-bottom{
+
+    text-align: center;
+
+    margin-top: 60px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-bottom p{
+
+    color: #b8c1ec;
+}
+
+/* =========================
+   SCROLL BUTTON
+========================= */
+
+#scrollTopBtn{
+
+    position: fixed;
+
+    bottom: 30px;
+    right: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 18px;
+
+    z-index: 999;
+
+    background: linear-gradient(
+        to right,
+        #22d3ee,
+        #8b5cf6
+    );
+
+    box-shadow: 0 0 20px rgba(34,211,238,0.35);
+
+    transition: 0.35s ease;
+}
+
+#scrollTopBtn:hover{
+
+    transform: translateY(-6px) scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .internship-card{
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .internship-image img{
+
+        max-width: 100%;
+    }
+
+    .internship-tags{
+
+        justify-content: center;
+    }
+
+    .internship-buttons{
+
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px){
+
+    .internship-hero h1{
+
+        font-size: 52px;
+    }
+
+    .internship-content h2{
+
+        font-size: 28px;
+    }
+
+    .internship-content h3{
+
+        font-size: 20px;
+    }
+
+    .footer-container{
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .footer{
+
+        padding: 60px 8% 20px;
+    }
+
+    .footer-brand p{
+
+        max-width: 100%;
+    }
+}
